@@ -7,4 +7,13 @@ describe('analytics', () => {
     beforeEach(() => {
         ReactGA.testModeAPI.resetCalls();
     });
+
+    it('correctly sends analytics', () => {
+        ReactGA.ga('send', 'pageview', '/mypage')
+
+        expect(ReactGA.testModeAPI.calls).toEqual([
+            ['create', 'foo', 'auto'],
+            ['send', 'pageview', '/mypage']
+        ]);
+      });
 })
