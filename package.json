@@ -1,10 +1,10 @@
 {
-    "name": "handball-league",
+    "name": "ebooks-store",
     "version": "0.1.0",
-    "description": "Handball web page",
+    "description": "Ebooks online store",
     "main": "index.js",
     "repository": "",
-    "author": "Busqandote <busqandote@gmail.com>",
+    "author": "Junior <yunior.alayo@gmail.com>",
     "license": "Apache-2.0",
     "scripts": {
         "start": "parcel index.html",
